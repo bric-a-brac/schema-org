@@ -1,0 +1,3 @@
+# CivicStructure
+
+openingHours

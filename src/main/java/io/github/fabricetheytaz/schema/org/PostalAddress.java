@@ -17,9 +17,15 @@ public class PostalAddress extends ContactPoint
 	 */
 	public PostalAddress()
 		{
-		super();
+		this("PostalAddress");
+		}
 
-		this.type = "PostalAddress";
+	/**
+	 * @since 0.1.0
+	 */
+	protected PostalAddress(final String type)
+		{
+		super(type);
 		}
 
 	/**

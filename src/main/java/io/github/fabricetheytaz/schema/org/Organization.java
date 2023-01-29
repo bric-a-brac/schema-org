@@ -14,9 +14,15 @@ public class Organization extends Thing
 	 */
 	public Organization()
 		{
-		super();
+		super("Organization");
+		}
 
-		this.type = "Organization";
+	/**
+	 * @since 0.1.0
+	 */
+	protected Organization(final String type)
+		{
+		super(type);
 		}
 
 	/**

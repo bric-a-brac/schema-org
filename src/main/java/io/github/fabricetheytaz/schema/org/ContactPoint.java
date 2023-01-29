@@ -20,9 +20,15 @@ public class ContactPoint extends Thing
 	 */
 	public ContactPoint()
 		{
-		super();
+		this("ContactPoint");
+		}
 
-		this.type = "ContactPoint";
+	/**
+	 * @since 0.1.0
+	 */
+	protected ContactPoint(final String type)
+		{
+		super(type);
 		}
 
 	/**

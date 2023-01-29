@@ -1,0 +1,4 @@
+# HairSalon
+
+= LocalBusiness
+= HealthAndBeautyBusiness

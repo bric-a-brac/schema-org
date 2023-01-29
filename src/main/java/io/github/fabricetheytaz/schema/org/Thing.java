@@ -12,7 +12,7 @@ public class Thing
 	protected String context;
 
 	@SerializedName("@type")
-	protected String type;
+	protected final String type;
 
 	@SerializedName("@id")
 	protected String id;
@@ -26,9 +26,17 @@ public class Thing
 	 */
 	public Thing()
 		{
+		this("Thing");
+		}
+
+	/**
+	 * @since 0.1.0
+	 */
+	protected Thing(final String type)
+		{
 		super();
 
-		this.type = "Thing";
+		this.type = type;
 		}
 
 	/**
