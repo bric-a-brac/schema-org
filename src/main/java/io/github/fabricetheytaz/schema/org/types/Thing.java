@@ -1,5 +1,7 @@
-package io.github.fabricetheytaz.schema.org;
+package io.github.fabricetheytaz.schema.org.types;
 
+import java.util.ArrayList;
+import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -18,7 +20,10 @@ public class Thing
 	protected String id;
 
 	protected String description;
+	protected String identifier;
 	protected String name;
+	//@JsonAdapter(SameAsAdapter.class)
+	protected List<String> sameAs;
 	protected String url;
 
 	/**
@@ -82,6 +87,22 @@ public class Thing
 	/**
 	 * @since 0.1.0
 	 */
+	public final String getIdentifier()
+		{
+		return identifier;
+		}
+
+	/**
+	 * @since 0.1.0
+	 */
+	public final void setIdentifier(final String identifier)
+		{
+		this.identifier = identifier;
+		}
+
+	/**
+	 * @since 0.1.0
+	 */
 	public final String getName()
 		{
 		return name;
@@ -93,6 +114,22 @@ public class Thing
 	public final void setName(final String name)
 		{
 		this.name = name;
+		}
+
+	/**
+	 * @since 0.1.0
+	 */
+	public final List<String> getSameAs()
+		{
+		synchronized (Thing.class)
+			{
+			if (sameAs == null)
+				{
+				sameAs = new ArrayList<>();
+				}
+
+			return sameAs;
+			}
 		}
 
 	/**

@@ -1,4 +1,4 @@
-package io.github.fabricetheytaz.schema.org;
+package io.github.fabricetheytaz.schema.org.types;
 
 /**
  * @version 0.1.0
