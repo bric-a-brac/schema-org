@@ -1,15 +1,14 @@
 package io.github.fabricetheytaz.schema.org.types;
 
+import io.github.fabricetheytaz.schema.org.annotations.Class;
+
 // TODO: Thing > Intangible > StructuredValue > ContactPoint 
 
 /**
  * @version 0.1.0
  * @since 0.1.0
- * 
- * @see {@link Thing}
- * @see {@link Intangible}
- * @see {@link StructuredValue}
  */
+@Class
 public class ContactPoint extends Thing
 	{
 	protected String email;

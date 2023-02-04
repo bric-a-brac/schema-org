@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
+import io.github.fabricetheytaz.schema.org.annotations.Class;
+
 /**
  * @version 0.1.0
  * @since 0.1.0
  */
+@Class
 public class Thing
 	{
 	@SerializedName("@context")

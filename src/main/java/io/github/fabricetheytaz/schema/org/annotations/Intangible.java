@@ -8,6 +8,6 @@ import java.lang.annotation.RetentionPolicy;
  * @since 0.1.0
  */
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Type
+public @interface Intangible
 	{
 	}

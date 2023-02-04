@@ -1,11 +1,19 @@
 package io.github.fabricetheytaz.schema.org.types;
 
+import io.github.fabricetheytaz.schema.org.annotations.Class;
+import io.github.fabricetheytaz.schema.org.annotations.Intangible;
+import io.github.fabricetheytaz.schema.org.annotations.StructuredValue;
+
 // TODO: Thing > Intangible > StructuredValue > ContactPoint > PostalAddress
+// à voir comment on peut se servir des annotations pour automatiser
 
 /**
  * @version 0.1.0
  * @since 0.1.0
  */
+@Class
+@Intangible
+@StructuredValue
 public class PostalAddress extends ContactPoint
 	{
 	protected String addressLocality;
