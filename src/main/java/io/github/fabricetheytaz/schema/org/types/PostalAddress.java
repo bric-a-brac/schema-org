@@ -11,9 +11,9 @@ import io.github.fabricetheytaz.schema.org.annotations.StructuredValue;
  * @version 0.1.0
  * @since 0.1.0
  */
-@Class
 @Intangible
 @StructuredValue
+@Class(type = "PostalAddress")
 public class PostalAddress extends ContactPoint
 	{
 	protected String addressLocality;

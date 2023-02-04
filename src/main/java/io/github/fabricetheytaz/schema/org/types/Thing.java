@@ -3,14 +3,14 @@ package io.github.fabricetheytaz.schema.org.types;
 import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.annotations.SerializedName;
-
 import io.github.fabricetheytaz.schema.org.annotations.Class;
+import io.github.fabricetheytaz.schema.org.annotations.Property;
 
 /**
  * @version 0.1.0
  * @since 0.1.0
  */
-@Class
+@Class(type = "Thing")
 public class Thing
 	{
 	@SerializedName("@context")
@@ -82,6 +82,7 @@ public class Thing
 	/**
 	 * @since 0.1.0
 	 */
+	@Property(label = "Description")
 	public final void setDescription(final String description)
 		{
 		this.description = description;
@@ -98,6 +99,7 @@ public class Thing
 	/**
 	 * @since 0.1.0
 	 */
+	@Property(label = "Identifiant")
 	public final void setIdentifier(final String identifier)
 		{
 		this.identifier = identifier;
@@ -114,6 +116,7 @@ public class Thing
 	/**
 	 * @since 0.1.0
 	 */
+	@Property(label = "Nom")
 	public final void setName(final String name)
 		{
 		this.name = name;
@@ -146,6 +149,7 @@ public class Thing
 	/**
 	 * @since 0.1.0
 	 */
+	@Property(label = "URL")
 	public final void setUrl(final String url)
 		{
 		this.url = url;

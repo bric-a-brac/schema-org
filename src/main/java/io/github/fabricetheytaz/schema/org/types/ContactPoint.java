@@ -1,6 +1,9 @@
 package io.github.fabricetheytaz.schema.org.types;
 
 import io.github.fabricetheytaz.schema.org.annotations.Class;
+import io.github.fabricetheytaz.schema.org.annotations.Intangible;
+import io.github.fabricetheytaz.schema.org.annotations.Property;
+import io.github.fabricetheytaz.schema.org.annotations.StructuredValue;
 
 // TODO: Thing > Intangible > StructuredValue > ContactPoint 
 
@@ -8,7 +11,9 @@ import io.github.fabricetheytaz.schema.org.annotations.Class;
  * @version 0.1.0
  * @since 0.1.0
  */
-@Class
+@Intangible
+@StructuredValue
+@Class(type = "ContactPoint")
 public class ContactPoint extends Thing
 	{
 	protected String email;
@@ -41,6 +46,7 @@ public class ContactPoint extends Thing
 	/**
 	 * @since 0.1.0
 	 */
+	@Property(label = "E-Mail")
 	public final void setEmail(final String email)
 		{
 		this.email = email;
@@ -57,6 +63,7 @@ public class ContactPoint extends Thing
 	/**
 	 * @since 0.1.0
 	 */
+	@Property(label = "Téléphone")
 	public final void setTelephone(final String telephone)
 		{
 		this.telephone = telephone;

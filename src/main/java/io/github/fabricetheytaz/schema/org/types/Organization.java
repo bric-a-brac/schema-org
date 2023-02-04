@@ -6,7 +6,7 @@ import io.github.fabricetheytaz.schema.org.annotations.Class;
  * @version 0.1.0
  * @since 0.1.0
  */
-@Class
+@Class(type = "Organization")
 public class Organization extends Thing
 	{
 	protected PostalAddress address;
